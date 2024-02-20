@@ -1,8 +1,16 @@
 # NokogiriRails
 
-TODO: Delete this and the text below, and describe your gem
+A simple gem to enable rails templates to be written to use the Nokogiri XML builder, in place of the usual Builder gem. Builder should still be your first choice but if you need Nokogiri's features, this may be useful. The use case which motivated the gem is writing Office OpenXML (ECMA-376) documents, which make heavy use of namespaces throughout, as Nokogiri handles writing documents using namespaces a little more easily than Builder. 
+
+It's a bit of a Frankengem, based mostly on caxlsx_rails and builder.
+
+This is absoltely NOT ready for public use or even development yet! It's in a public repository only to facilitate some internal testing with public CI/CD systems. It has not been and should not be pushed to rubygems yet.
+
+Once again, to be completely clear: *DO NOT USE THIS! IT DOESN'T WORK PROPERLY YET, HAS NO TEST COVERAGE, IS INSECURE AND WILL PROBABLY WREAK UNTOLD HAVOC ON YOUR PROJECT.*
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nokogiri_rails`. To experiment with that code, run `bin/console` for an interactive prompt.
+
+
 
 ## Installation
 
